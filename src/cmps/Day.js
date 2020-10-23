@@ -18,6 +18,7 @@ const StyledDiv = styled.div`
   text-align: center;
   border-radius: 15px;
   padding: 10px 0px;
+  cursor: pointer;
 `
 
 export default Day

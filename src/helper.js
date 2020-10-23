@@ -1,1 +1,1 @@
-export const getIconUrl = (icon, getBigVersion = false) => `http://openweathermap.org/img/w${getBigVersion ? `n` : ''}/${icon}${getBigVersion ? `@2x` : ''}.png`
+export const getIconUrl = (icon, getBigVersion = false) => `https://openweathermap.org/img/w${getBigVersion ? `n` : ''}/${icon}${getBigVersion ? `@2x` : ''}.png`

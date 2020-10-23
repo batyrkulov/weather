@@ -2,6 +2,7 @@ import React from 'react'
 import Info from './cmps/Info'
 import Select from './cmps/Select'
 import styled from 'styled-components'
+import { Helmet } from 'react-helmet'
 
 class App extends React.Component {
   constructor(props) {
@@ -12,13 +13,16 @@ class App extends React.Component {
     }
   }
 
-  setSelectedCity = city => this.setState({selectedCity: city})
+  setSelectedCity = city => this.setState({ selectedCity: city })
 
 
-  render () {
+  render() {
     return <MainStyle>
-      <Select setSelectedCity={this.setSelectedCity}/>
-      <Info selectedCity={this.state.selectedCity}/>
+      <Helmet>
+        <title>Nagima Weather</title>
+      </Helmet>
+      <Select setSelectedCity={this.setSelectedCity} />
+      <Info selectedCity={this.state.selectedCity} />
     </MainStyle>
   }
 }

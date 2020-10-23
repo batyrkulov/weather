@@ -1,6 +1,6 @@
 export const weatherAPI = {
   getWeather: async city => {
-    const wetherDataResponse = await fetch(`http://api.openweathermap.org/data/2.5/forecast?lang=en&units=metric&APPID=d40a503250d24c66b99389f9d54b9381&q=${city}`)
+    const wetherDataResponse = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lang=en&units=metric&APPID=d40a503250d24c66b99389f9d54b9381&q=${city}`)
     const wetherInJson = await wetherDataResponse.json()
     if (wetherInJson.cod=='200') {
       let lastSelectedDay =''
